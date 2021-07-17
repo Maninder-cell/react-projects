@@ -1,0 +1,154 @@
+.chat{
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width:65vw;
+}
+
+.MuiAppBar-root{
+    box-shadow: none !important;
+    background-color: rgba(0, 0, 0, 0.096) !important;
+}
+
+.chat_body{
+    flex: 1;
+    max-height: 82.4vh;
+    background-image: url("https://fsa.zobj.net/crop.php?r=Y7XpYTU5wXAZHT1I-HGkqNiqY1umyP2ahrm8H1akctM1u5gRfs35OOglkZ8Cj3zonzO0Gh7mBcZ3bi5czNKnkuqe-F1E1iJjTvnOB1d5p2o59NL3le93Wd6fOMo-lSfWf-IgvhxkJdQv8RSV");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.chat_message{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 50%;
+}
+
+.chat_data{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 255, 247);
+    padding: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+}
+
+.chat_name{
+    margin-bottom:3px;
+    color: rgb(0, 0, 0, 0.50);
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.chat_time{
+    align-self: flex-end;
+    font-size: smaller;
+    color: rgb(0, 0, 0, 0.50);
+}
+
+.msg{
+    padding-right: 120px;
+    margin-bottom:4px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.chat_reciever{
+    margin-left: auto;
+}
+
+.chat_reciever > .chat_data{
+    background-color: rgba(152, 251, 152, 0.801);
+}
+
+.chat_reciever > .chat_name{
+    display: none;
+}
+
+.chat_form{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input{
+    margin-right:8px;
+    margin-left:18px;
+    border: none;
+    outline: none;
+    height:43px;
+    flex: 1;
+    padding:0px 15px 0px 15px;
+    border-radius: 50px;
+}
+
+.typing {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:green;
+}
+
+.margin{
+    transform: translateY(-10px);
+}
+
+.typing span {
+    margin-bottom: 4px;
+}
+
+.emoji_menu > .MuiMenu-paper {
+    margin-left: -25px !important;
+    margin-top: -48px !important;
+}
+
+.emoji_menu .MuiList-root{
+    padding: 0 !important;
+}
+
+.emoji-mart-emoji{
+    outline: none;
+}
+
+.emoji_picker{
+    margin-left:0px !important;
+}
+
+@media only screen and (max-width : 900px){
+    .chat{
+        flex: 1;
+    }
+    .chat_message{
+        max-width: 76%;
+    }
+    .msg{
+        padding-right: 17px;
+        margin-bottom:4px;
+        word-wrap: break-word;
+    }
+    .chat_body{
+        padding:12px !important;
+    }
+}
+
+
+@media only screen and (max-width : 599px){
+    .emoji{
+        bottom: 55px;
+    }   
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .input{
+        margin-left:0px;
+    }
+}

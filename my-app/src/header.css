@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Arvo');
+
+.app_header{
+    padding: 5px 60px 5px 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+    font-family: Pacifico;
+    font-weight: lighter;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Arvo';
+}
+
+h4{
+    font-family: 'Arvo';
+    margin-right:15px;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:710px){
+    .app_header{
+        padding: 5px 5px 5px 10px;
+    }
+}

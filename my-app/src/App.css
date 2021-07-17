@@ -1,0 +1,23 @@
+.app{
+    background-color: rgba(245, 245, 245, 0.226);
+}
+
+.upload{
+    position: fixed !important;
+    top: 85vh;
+    left:92%;
+}
+
+@media only screen and (max-width:710px){
+    .upload{
+        top: 85vh;
+        left:84%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .upload{
+        top: 81vh;
+        left:79%;
+    }
+}

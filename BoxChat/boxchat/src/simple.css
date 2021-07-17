@@ -1,0 +1,14 @@
+.simple{
+    align-self: center;
+    flex: 0.35;
+    margin: 0 auto;
+}
+
+.simple_data{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 60px 0;
+}
